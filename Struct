@@ -1,0 +1,26 @@
+#include <iostream>
+#include <locale.h>
+#include <stdio.h>
+
+using namespace std;
+
+struct carros {
+	string marca;
+	string modelo;
+	int ano;
+};
+
+int main()
+{
+	char a=123, b = 126;
+	setlocale(LC_ALL,"Portuguese");
+	carros GCar;
+	GCar.marca = "Citroen";
+	GCar.modelo = "AirCross";
+	GCar.ano = 2018;
+	cout << "Marca "<< GCar.marca <<"\t" << a << endl;
+	cout << "Modelo " <<GCar.modelo <<"\t" << b << endl;
+	cout << "Ano " << GCar.ano << endl;
+	system("PAUSE");
+	return 0;
+}
