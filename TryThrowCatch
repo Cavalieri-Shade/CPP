@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <locale.h>
+#include <iostream>
+
+//A estrutura Try, throw, catch se parece com o IF.
+//Porém ela considera tratar erros e exceções
+//Diferente do IF, ela considera um tratamento de condicional
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL,"Portuguese");
+	try {
+		int idade = 17;
+			if (idade >=18)
+			{
+				cout << "Acesso concedido" << endl;
+			} else {
+				throw(idade);
+			}
+		}
+	catch (int num)
+		{
+			cout << "Acesso negado" << endl;
+			cout << "A sua idade é: " << num << endl;
+			cout << "A idade de aceita é " << 18 << endl;
+		}
+	system("PAUSE");
+	return 0;
+}
