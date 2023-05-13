@@ -1,21 +1,21 @@
-/* A linguagem de ProgramaÁ„o C++ pode ser considerad por muitos como um dinossauro. Mas a sua constante 
-utilizaÁ„o em sistemas operacionais, sistemas crÌticos, banc·rios, games, aplicaÁıes que exigem rapidez,
-e precis„o, tornam a C++ uma linguagem atual tanto quanto a maioria das linguagens.*/
+/* A linguagem de Programa√ß√£o C++ pode ser considerad por muitos como um dinossauro. Mas a sua constante 
+utiliza√ß√£o em sistemas operacionais, sistemas cr√≠ticos, banc√°rios, games, aplica√ß√µes que exigem rapidez,
+e precis√£o, tornam a C++ uma linguagem atual tanto quanto a maioria das linguagens.*/
 
-//Se me perguntarem qual È a melhor linguagem, eu diria que È a C++.
-//Se for para GAMES, eu tenho d˙vidas em recomenda-las no lugar de qualquer outra.
+//Se me perguntarem qual √© a melhor linguagem, eu diria que √© a C++.
+//Se for para GAMES, eu n√£o tenho d√∫vidas em recomenda-las no lugar de qualquer outra.
 // Lembre-se que a maioria dos GE foram escritos em C++
 
 #include <iostream>
-#include <locale.h> //Biblioteca que permite mÈtodo de localizaÁ„o
+#include <locale.h> //Biblioteca que permite m√©todo de localiza√ß√£o
 
 using namespace std;
 
-//MÈtodo que n„o retorna valor
+//M√©todo que n√£o retorna valor
 void soma(float x=2.0f,float y = 3.0f)
 {
 	float Soma =x + y;
-	cout << "O valor da soma È:" <<Soma << "\n\n";
+	cout << "O valor da soma √©:" <<Soma << "\n\n";
 }
 
 
@@ -23,15 +23,15 @@ void soma(float x=2.0f,float y = 3.0f)
 int main()
 {
 	float x,y;
-	//MÈtodo que permite acentuaÁ„o no DEV C++
+	//M√©todo que permite acentua√ß√£o no DEV C++
 	setlocale(LC_ALL,"Portuguese");
 	cout << "Digite um valor para (X)" << endl;
 	cin >> x;
 	cout << "\n" << "Digite um valor para (Y)" << endl;
 	cin >> y;
-	//Chamada do mÈtodo
+	//Chamada do m√©todo
 	soma(x,y);
-	//MÈtodo que segura a execuÁ„o atÈ que se aperte uma tecla
+	//M√©todo que segura a execu√ß√£o at√© que se aperte uma tecla
 	//Essa funcionalidade tem praticidade em .exe
 	system("PAUSE");
 	return 0;
